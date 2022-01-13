@@ -11,8 +11,6 @@
 <section class="content">
     <div class="container-fluid">
 
-<a href="<?= BASE_URL('index.php?/Ujian/back'); ?>" class="btn btn-warning">Semua Data</a>
-
 <div class="col-12">
                 <div class="card">
                     <div class="card-header">
@@ -40,7 +38,8 @@
                   </div>
                 <!-- /.card-body -->
                 
-                  <button type="submit" class="btn btn-warning">Simpan</button>
+                  <button type="submit" class="btn btn-Primary">Simpan</button>
+                  <a href="<?= BASE_URL('index.php?/Ujian/back'); ?>" class="btn btn-Danger">Batal</a>
                 
                 <!-- /.card-footer -->
               </form>

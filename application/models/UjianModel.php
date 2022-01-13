@@ -29,5 +29,22 @@ class UjianModel  extends CI_Model {
 		$coba = $this->db->insert('tb_ujian', $data);
 		return $coba;
 	}
+
+	function del($id)
+	{
+		$this->db->where('no' ,$id);
+		$this->db->delete('tb_ujian');
+	}
+
+	public function getId($no)
+    {
+        return $this->db->get_where('tb_ujian', ["no" => $no])->row();
+    }
+
+	// SIMPAN DATA
+	public function saveUpdate($data, $no)
+	{
+	return $this->db->update('tb_ujian', $data, array('no' => $no));
+	}
     
 }
